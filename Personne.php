@@ -1,11 +1,14 @@
 <?php
   class Personne{
-  public $name;
-  public $address;
+  private $name;
+  private $address;
   public $zipCode;
   public $phone;
   public $email;
   
+ public function __construct($name = null){
+    $this->name = $name;
+  }
 public function getName(){
     return $this->name;
 
